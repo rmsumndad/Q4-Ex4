@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Conversion Calculator | Miles - Kilometers</title>
+
+<style>
+
+#div1{
+		margin-left: 25%;
+		margin-right: 25%;
+		background-color: lightcoral;
+		border-style: dotted;
+		color: white;
+}
+
+div{
+		margin-top: 10%;
+		margin-left: 10%;
+		margin-right: 10%;
+		background-color: lavenderblush;
+		color: black;
+}
+
+body{
+		background-color: black;
+
+}
+</style>
+
+</head>
+<body>
+<div><br>
+	<h2 align="center">Miles Conversion</h2>
+<div id="div1" align="center"><br>
+	<h2>Miles - Centimeters</h2>
+<p>
+  <label>Miles</label>
+  <input id="ipMLS" type="number" placeholder="Miles" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Centimeters: <span id="opCM"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("opCM").innerHTML=valNum/0.0000062137;
+}
+</script>
+</div>
+<br>
+
+<div id="div1" align="center"><br><button type="submit" onclick="alert(Welcome Back! Try another one!!!)" align="center"><a href=""></a>BACK TO HOME PAGE</button><br><br></div>
+
+<br><br>
+
+</body>
+</html>
